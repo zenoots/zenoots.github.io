@@ -86,8 +86,8 @@
         ufo: null,
         // Pipe speed variables
         initialPipeSpeed: 400,
-        pipeSpeed: 460,
-        maxPipeSpeed: 460,
+        pipeSpeed: 400,
+        maxPipeSpeed: 400,
         // Pipe gap sizes
         pipeGapSizes: [],
         pipeGapIndex: 0,
@@ -150,7 +150,7 @@
         // Initialize pipe speed
         game.initialPipeSpeed = 200;
         game.pipeSpeed = game.initialPipeSpeed;
-        game.maxPipeSpeed = 400;
+        game.maxPipeSpeed = 300;
       }
 
       // Initialize backgrounds
@@ -1250,7 +1250,7 @@
           game.score % 10 === 0 &&
           game.pipeSpeed < game.maxPipeSpeed
         ) {
-          game.pipeSpeed += 100; // Increase speed by 10
+          game.pipeSpeed += 20; // Increase speed by 10
         }
       }
 
